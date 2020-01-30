@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "235573005245",
+    "firebase_url": "https://samarawork-1d977.firebaseio.com",
+    "project_id": "samarawork-1d977",
+    "storage_bucket": "samarawork-1d977.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:235573005245:android:cd5163100408be5c1720d4",
+        "android_client_info": {
+          "package_name": "com.samaraworkgroup.samarawork"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "235573005245-jv6v93jg9getm0utnj431uu2sfmif3gq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.samaraworkgroup.samarawork",
+            "certificate_hash": "faa21aee513c0201b4d61210596c244878fb46c1"
+          }
+        },
+        {
+          "client_id": "235573005245-g3sjtbeh3hqdkedpb50c0lmv158pgva2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA0PVcP0EZl1hsp-1fweN-z8vZX50PDIXM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "235573005245-g3sjtbeh3hqdkedpb50c0lmv158pgva2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GetMoneyActivity">
+
+    <TextView
+        android:id="@+id/txt_info"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:text="@string/use"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+
+    <EditText
+        android:id="@+id/edt_sum"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/bonus_sum"
+        android:paddingStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:textSize="16sp"
+        android:textColorHint="@android:color/black"
+        android:background="@drawable/edt_border"
+        app:layout_constraintTop_toBottomOf="@+id/txt_info"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <fr.ganfra.materialspinner.MaterialSpinner
+        android:id="@+id/edt_use"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:entries="@array/use"
+        android:paddingStart="10dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        app:ms_highlightColor="@android:color/holo_green_dark"
+        app:ms_baseColor="@android:color/holo_green_dark"
+        app:ms_hint="@string/get_use"
+        app:ms_hintColor="@android:color/black"
+        app:ms_multiline="true"
+        app:ms_floatingLabelColor="@android:color/holo_green_dark"
+        app:ms_floatingLabelText="@string/get_use"
+        app:ms_arrowColor="@android:color/holo_green_dark"
+        app:ms_arrowSize="10dp"
+        app:layout_constraintTop_toBottomOf="@+id/edt_sum"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="30dp"
+        android:background="@drawable/button_border"
+        android:text="@string/btn_txt_send"
+        android:textAllCaps="true"
+        android:textColor="@android:color/white"
+        app:layout_constraintBottom_toTopOf="@id/txt_ru"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <ImageView
+        android:id="@+id/photo"
+        android:layout_width="0dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:src="@drawable/report_ru"
+        android:textColorHint="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@+id/edt_use"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/txt_ru"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="100dp"
+        android:layout_marginBottom="10dp"
+        android:text="@string/txt_ru"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/txt_uk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/txt_uk"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="10dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        />
+    <FrameLayout
+        android:id="@+id/frame"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:elevation="3dp"
+        android:focusable="true"
+        android:visibility="invisible">
+
+        <ProgressBar
+            android:id="@+id/progress"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:background="@android:color/transparent"
+            android:elevation="3dp"
+            android:visibility="invisible"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </FrameLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
